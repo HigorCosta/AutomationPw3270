@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.github.vebqa</groupId>
+		<artifactId>vebtal-parent</artifactId>
+		<version>1.0.3</version>
+	</parent>
+	<artifactId>vebtal-3270</artifactId>
+	<version>1.0.3.1</version>
+
+	<name>Test Adaption Layer for Telnet 3270 terminals</name>
+	<description>Provides access for testing Telnet 3270 graphical user interfaces with junit / assertj or keyword driven approach</description>
+	<inceptionYear>2018</inceptionYear>
+
+	<url>https://github.com/vebqa/vebtal-3270</url>
+
+	<packaging>jar</packaging>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<properties>
+		<modulename>vebtal3270</modulename>
+	</properties>
+
+	<scm>
+		<url>https://github.com/vebqa/vebtal-3270</url>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/vebqa/vebtal-3270/issues</url>
+	</issueManagement>
+
+	<developers>
+		<developer>
+			<name>Karsten Doerges</name>
+			<email>kdoerges@googlemail.com</email>
+			<url>https://github.com/kdoerges</url>
+		</developer>
+		<developer>
+			<name>Nithiyaa Radjindirin</name>
+			<url>https://github.com/nitfeu</url>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.vebqa</groupId>
+			<artifactId>vebtal-api</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.vebqa</groupId>
+			<artifactId>f3270</artifactId>
+			<version>1.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${version.slf4j}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>${version.assertj}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${version.junit}</version>
+		</dependency>
+	</dependencies>
+</project>
